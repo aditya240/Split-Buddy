@@ -1,70 +1,121 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Split Buddy
 
-## Available Scripts
+Split Buddy is a React-based app that helps you split bills with friends and keep track of who owes whom money. It makes splitting bills easy by calculating shares and keeping a clear record of outstanding balances between friends.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Add Friends**: Add new friends using the "Add Friend" button. Each friend is displayed in a list with their current balance status.
+- **Bill Splitting**: Select a friend from the list to open a new section where you can enter:
+  - The **total bill amount**.
+  - **Your share** of the bill.
+  - The friend's share is automatically calculated based on your input.
+  - Option to select **who paid** the bill.
+- **Owed Balances Display**: Each friend in the list shows their current balance:
+  - If the friend **owes you money**, the balance is shown in **green**.
+  - If **you owe the friend**, the balance is displayed in **red**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Follow these steps to get the project running on your local machine.
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Make sure you have the following installed:
 
-### `npm run build`
+- **Node.js**: [Download and install Node.js](https://nodejs.org/)
+- **npm** (Node Package Manager) or **yarn**: npm comes with Node.js, but you can also install [yarn](https://yarnpkg.com/getting-started/install) if preferred.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/aditya240/Split-Buddy.git
+   ```
 
-### `npm run eject`
+2. Navigate to the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd Split-Buddy
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install the required dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   Using npm:
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   Or using yarn:
+   ```bash
+   yarn install
+   ```
 
-## Learn More
+### Running the Project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To run the project locally:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Start the development server:
 
-### Code Splitting
+   Using npm:
+   ```bash
+   npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   Or using yarn:
+   ```bash
+   yarn start
+   ```
 
-### Analyzing the Bundle Size
+2. Open your browser and navigate to `http://localhost:3000` to view the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
 
-### Making a Progressive Web App
+1. **Add a Friend**: Click the "Add Friend" button to add a new friend to your list.
+2. **Select a Friend**: Click on the "Select" button next to the friend's name in the list to open the bill-splitting section.
+3. **Enter Bill Details**: Enter the total bill amount, your share, and select who paid the bill. The friend's share is automatically calculated.
+4. **View Owed Balances**: In the friend list, you’ll see each friend's current balance under their name:
+   - If a friend owes you money, their balance is shown in **green**.
+   - If you owe a friend money, the balance is displayed in **red**.
+   - If you're both even, it is displayed as such without any colour schemes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Example
 
-### Advanced Configuration
+- You enter a total bill of $100, and your share is $40. Your friend's share will be automatically calculated as $60.
+- If your friend paid the full bill, you’ll owe them $40, which will be displayed in red under their name.
+- If you paid the bill, they will owe you $60, which will be displayed in green under their name.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Technologies Used
 
-### Deployment
+- **React**: A JavaScript library for building user interfaces.
+- **CSS**: For styling the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Screenshots
 
-### `npm run build` fails to minify
+Here are some screenshots of the app in action:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="1512" alt="Screenshot 2024-10-13 at 8 39 05 PM" src="https://github.com/user-attachments/assets/6eacd48a-b3b5-48e1-8c07-11199d11e80a">
+
+<img width="1512" alt="Screenshot 2024-10-13 at 8 39 18 PM" src="https://github.com/user-attachments/assets/dfad1cc5-0aa4-4b7e-acf2-dc9d50806510">
+
+<img width="1512" alt="Screenshot 2024-10-13 at 8 39 42 PM" src="https://github.com/user-attachments/assets/f1ad3ec8-8aeb-4a81-8436-a0378e8c14f9">
+
+<img width="1512" alt="Screenshot 2024-10-13 at 8 39 50 PM" src="https://github.com/user-attachments/assets/038deb1e-0244-48a6-afa2-aba8b2a3ffbb">
+
+<img width="1512" alt="Screenshot 2024-10-13 at 8 41 28 PM" src="https://github.com/user-attachments/assets/01e335bd-d697-4297-908f-87d04e61c09e">
+
+<img width="1512" alt="Screenshot 2024-10-13 at 8 41 37 PM" src="https://github.com/user-attachments/assets/0d90d22d-1cb9-472f-999e-ff602f6b5fc0">
+
+<img width="1512" alt="Screenshot 2024-10-13 at 8 42 02 PM" src="https://github.com/user-attachments/assets/22d9920b-0190-4bc3-a7f2-fcf4536b1194">
+
+<img width="1512" alt="Screenshot 2024-10-13 at 8 42 12 PM" src="https://github.com/user-attachments/assets/8ea6ca78-3c43-4388-98a6-fd367202cc0d">
+
+<img width="1512" alt="Screenshot 2024-10-13 at 8 42 40 PM" src="https://github.com/user-attachments/assets/507effd0-096d-4358-ae28-d8fe431e6a56">
+
+<img width="1512" alt="Screenshot 2024-10-13 at 8 42 57 PM" src="https://github.com/user-attachments/assets/5903862e-b3b4-44dc-b440-47ce01505a8d">
+
+
+## Author
+
+- **Aditya Jaiswal** - [GitHub](https://github.com/aditya240)
